@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: gray;
+}
+
+.submit {
+  float: right;
+  border: 1px solid gray;
+  border-radius: 4px;
+  display: inline-block;
+  line-height: 24px;
+  width: 10%;
+  text-align: center;
+  vertical-align: middle;
+  background-color: rgb(79, 186, 226);
+}
+
+.input {
+  display: inline-block;
+  line-height: 24px;
+  width: 86%;
+  border: 1px solid gray;
+  border-radius: 4px;
+  background-color: rgb(221, 219, 221);
+}
+
+#head {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+span[class="submit"] {
+  float: right;
+}
+
+#head {
+  margin-bottom: 10px;
+}
+
+.wrapper {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  top: 50%;
+  width: 500px;
+  height: 500px;
+  overflow: hidden;
+  margin-left: -250px;
+  margin-top: -250px;
+  background: rgb(249, 204, 157);
+  border-radius: 6px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+#content .entry {
+  width: 100%;
+  border: 1px solid gray;
+  border-radius: 4px;
+  line-height: 24px;
+  vertical-align: middle;
+  margin-bottom: 10px;
+  background-color: rgb(195, 208, 139);
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+#content .entry:hover {
+  background-color: gray;
+}
+
+#content .entry span:hover {
+  font-weight: bold;
+  left: 50%;
+  top: 50%;
+  width: 500px;
+  height: 500px;
+}
+
+#content .entry span[class="button"] {
+  padding: 0 4px;
+  float: right;
+}
+
+.wrapper .mask {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  margin-left: -250px;
+  margin-top: -250px;
+  width: 500px;
+  height: 500px;
+  background-color: rgba(53, 160, 140, 0.9);
+}
+
+.wrapper .detailWarpper {
+  display: none; 
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  top: 0;
+  width: 40%;
+  height: 40%;
+  overflow: hidden;
+  background-color: rgb(253, 221, 155);
+  border-radius: 4px;
+  box-shadow: 0 0 5px gray;
+  padding: 10px;
+}
+
+.wrapper .newTitle {
+  display: none;
+}
+
+.wrapper .right .input {
+  margin-bottom: 10px;
+}
+
+.wrapper .right div .input {
+  height: 100px;
+}
+
+.wrapper .right input[type="date"] {
+  background-color: white;
+}
